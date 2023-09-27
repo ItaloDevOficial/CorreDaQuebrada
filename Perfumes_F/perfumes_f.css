@@ -748,7 +748,9 @@ li{
     text-align: center;
   }
 
-
+  main{
+    bottom: 200px;
+  }
 
   .swiper{
     width: 100%;
@@ -759,7 +761,7 @@ li{
 
 }
 
-@media screen and (min-width: 560px) and (max-width: 679px){
+@media screen and (min-width: 460px) and (max-width: 679px){
 
   header {
       width: 100%;
@@ -785,7 +787,9 @@ li{
     text-align: center;
   }
 
-
+  main{
+    bottom: 200px;
+  }
 
   .swiper{
     width: 100%;
@@ -795,7 +799,7 @@ li{
 
 }
 
-@media screen and (max-width: 559px){
+@media screen and (max-width: 459px){
 
   header {
       width: 100%;
@@ -821,7 +825,9 @@ li{
     text-align: center;
   }
 
-  
+  main{
+    bottom: 200px;
+  }
 
   .swiper{
     width: 100%;
