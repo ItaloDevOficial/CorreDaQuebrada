@@ -1,0 +1,765 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: fonteg;
+  src: url(/fonts/BebasNeue-Regular.otf);
+}
+
+@font-face {
+  font-family: emojis2;
+  src: url(/fonts/Icons\ 2019.ttf);
+}
+
+@font-face {
+  font-family: tangerine;
+  src: url(/fonts/Tangerine-Bold.ttf);
+}
+
+body {
+  background-color: #03271b;
+}
+
+header {
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+nav {
+  display: flex;
+}
+
+#img_logo {
+  position: relative;
+  width: 100px;
+  margin-left: 100px;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+::before,
+::after {
+  position: absolute;
+  content: "";
+}
+
+.btn-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 10px auto 35px;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: #03271b;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  min-width: 150px;
+}
+
+.btn span {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  left: 0;
+  width: 100%;
+  padding: 15px 10px;
+  transition: 0.3s;
+}
+
+.btn-2::before {
+  background-color: #dba328;
+  transition: 0.3s ease-out;
+}
+
+.btn-2 span {
+  color: #dba328;
+  border: 1px solid #dba328;
+  transition: 0.2s;
+}
+
+.btn-2 span:hover {
+  color: #03271b;
+  transition: 0.2s 0.1s;
+  border: 1px solid #03271b;
+}
+
+.btn.hover-slide-up::before {
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0%;
+  width: 100%;
+}
+
+.btn.hover-slide-up:hover::before {
+  height: 100%;
+}
+
+main {
+  position: relative;
+  width: calc(min(90rem, 90%));
+  margin: 0 auto;
+  min-height: 100vh;
+  column-gap: 3rem;
+  padding-block: min(20vh, 3rem);
+}
+
+.bg {
+  position: fixed;
+  top: -4rem;
+  left: -12rem;
+  z-index: -1;
+  opacity: 0;
+}
+
+.bg2 {
+  position: fixed;
+  bottom: -2rem;
+  right: -3rem;
+  z-index: -1;
+  width: 9.375rem;
+  opacity: 0;
+}
+
+main > div span {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+main > div h1 {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-family: fonteg;
+  font-weight: 900;
+  font-size: 5rem;
+  background-color: #ffffff;
+  background-image: linear-gradient(45deg, #dba328, #fcd686);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+main > div hr {
+  display: block;
+  background: #dba328;
+  height: 0.25rem;
+  width: 6.25rem;
+  border: none;
+  margin: 1.125rem 0 1.875rem 0;
+}
+
+main > div p {
+  line-height: 1.6;
+}
+
+main a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 3.125rem;
+  transition: 0.3s ease-in-out;
+}
+
+main > div > a {
+  border: 2px solid #ffffff;
+  margin-top: 2.188rem;
+  padding: 0.625rem 1.875rem;
+}
+
+main > div > a:hover {
+  border: 0.125rem solid #ffffff;
+  color: #ffffff;
+}
+
+.m_vendidos{
+  position: relative;
+  width: 40%;
+  float: left;
+  top: 200px;
+}
+
+.m_vendidos p{
+  text-align: justify;
+  padding-right: 20px;
+}
+
+.swiper {
+  top: 100px;
+  width: 60%;
+  padding-top: 3.125rem;
+  border-left: 1px solid #dba328;
+  border-right: 1px solid #dba328;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination {
+  bottom: 1.25rem !important;
+}
+
+.swiper-slide {
+  width: 18.75rem;
+  height: 28.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+  border: 1px solid #dba328;
+}
+
+p{
+  color: #fff;
+}
+
+.swiper-slide h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  padding: 0 0 0 1.563rem;
+  text-transform: uppercase;
+}
+
+.swiper-slide p {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0 1.563rem;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.swiper-slide a {
+  margin: 1.25rem 1.563rem 3.438rem 1.563rem;
+  padding: 0.438em 1.875rem;
+  font-size: 0.9rem;
+}
+
+.swiper-slide a:hover {
+  color: #dba328;
+}
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 0.625rem;
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+}
+
+.swiper-slide--one {
+  background: linear-gradient(to top, #03271b, #03271b8e, #03271b1c), url("ImagensPerfumes/OneMillion1\(PacoRabanne\).jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #03271b, #03271b8e, #03271b1c), url("ImagensPerfumes/Invictus1\(PacoRabanne\).jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #03271b, #03271b8e, #03271b1c), url("ImagensPerfumes/Bleu\(Chanel\).jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #03271b, #03271b8e, #03271b1c), url("ImagensPerfumes/212Vip\(CarolinaHerrera\).jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #03271b, #03271b8e, #03271b1c), url("ImagensPerfumes/Phantom\(PacoRabanne\).jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+
+
+
+
+
+
+.img-container {
+  position: relative;
+  height: 500px;
+  width: 700px;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+
+.box {
+  box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  width: 500px;
+  height: 440px;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 1px solid #dba328;
+  position: absolute;
+  top: 50%;
+  transition: 800ms ease-in-out;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+}
+
+.box:first-of-type {
+  z-index: 5;
+  opacity: 0;
+  left: 15%;
+  transform: translate(-50%, -50%) rotateY(-10deg);
+}
+
+.box:nth-of-type(2) {
+  opacity: 1;
+  left: 20%;
+  transform: translate(-50%, -50%) rotateY(-10deg);
+  z-index: 5;
+
+}
+
+.box:nth-of-type(3) {
+  left: 25%;
+  opacity: 0.75;
+  color: #eee;
+  z-index: 10;
+  transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-50px);
+}
+
+.box:nth-of-type(4) {
+  z-index: 5;
+  opacity: 0.5;
+  left: 30%;
+  transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-100px);
+}
+
+.box:nth-of-type(5) {
+  z-index: 2;
+  opacity: 0.25;
+  left: 35%;
+  transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-150px);
+}
+
+.box:nth-of-type(6) {
+  z-index: 2;
+  opacity: 0.0;
+  left: 40%;
+  transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-200px);
+}
+
+#PacoRabanne, #CarolinaHerrera, #CalvinKlein, #HugoBoss, #Diesel, #Mercedes, #DolceGabbana, #MontBlanc, #PoloRalphLauren {
+  position: relative;
+  width: 97%;
+  height: auto;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.712);
+  margin: auto;
+  border-radius: 30px;
+  top: 200px;
+  border: 1px solid #dba328;
+  margin-bottom: 100px;
+}
+
+#logo2 {
+  position: absolute;
+  width: 30%;
+  margin-left: 470px;
+  top: -140px;
+}
+
+.h1-perfume {
+  font-size: 100px;
+  text-align: center;
+  font-family: tangerine;
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding: 50px;
+  color: #dba328;
+  text-shadow: 2px 2px #000000;
+  margin-top: 30px;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 330px;
+  height: 450px;
+  background: #000;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.712);
+  border: 1px solid #dba328;
+}
+
+.poster {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.poster::before {
+  content: '';
+  position: absolute;
+  bottom: -45%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: .3s;
+}
+
+.card:hover .poster::before {
+  bottom: 0;
+}
+
+.poster img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s;
+}
+
+.card:hover .poster img {
+  transform: scale(1.1);
+}
+
+.details {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.5em 1.5em 2em;
+  background: #03271bb2;
+  backdrop-filter: blur(16px) saturate(120%);
+  transition: .3s;
+  color: #fff;
+  z-index: 2;
+}
+
+.card:hover .details {
+  bottom: 0;
+}
+
+.details h1 {
+  font-weight: 700;
+}
+
+.details h1 {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.details .rating {
+  position: relative;
+  margin-bottom: 15px;
+  display: flex;
+  gap: .25em;
+}
+
+
+.details .rating span {
+  margin-left: 0.25em;
+}
+
+.details .tags {
+  display: flex;
+  gap: .375em;
+  margin-bottom: .875em;
+  font-size: .70em;
+}
+
+.desc{
+  font-size: .85rem;
+}
+
+.details .tags span {
+  padding: .35rem .65rem;
+  color: #fff;
+  border: 1.5px solid #dba328;
+  border-radius: 4px;
+  border-radius: 50px;
+}
+
+.details .desc {
+  color: #fff;
+  opacity: .8;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  background-size: cover;
+  background-color: #02160f;
+  font-size: 20px;
+  top: 200px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.712);
+}
+
+#footer_content {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 2fr);
+  padding: 3rem 3rem;
+}
+
+
+.footer_list {
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  gap: 0.75rem;
+  list-style: none;
+  margin-left: 20%;
+
+
+}
+
+.footer_list h3 {
+  color: #dba328;
+  font-family: fonteg;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
+.footer_list a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.9s all;
+  font-family: fonteg;
+  letter-spacing: 2px;
+
+}
+
+.footer_list a:hover {
+  color: #dba328;
+}
+
+#footer_copyright {
+  display: flex;
+  justify-content: center;
+  background-color: #02160f;
+  font-family: fonteg;
+  color: #dba328;
+}
+
+li{
+  font-family: fonteg;
+  letter-spacing: 2px;
+}
+
+#emoji {
+  font-family: emojis2;
+}
+
+@media screen and (min-width: 868px) and (max-width: 1086px){
+
+  header {
+      width: 100%;
+      height: 150px;
+      margin: auto;
+      margin-top: 20px;
+  }
+
+  #logo2{
+      display: none;
+  }
+
+  #img_logo {
+      position: relative;
+      width: 100px;
+      margin-left: -10px;
+  }
+
+  .m_vendidos{
+    width: 100%;
+    text-align: center;
+  }
+
+  main{
+    bottom: 200px;
+  }
+
+  .swiper{
+    width: 100%;
+    top: 300px;
+  }
+
+
+}
+
+@media screen and (min-width: 680px) and (max-width: 867px){
+
+  header {
+      width: 100%;
+      height: 150px;
+      margin: auto;
+      margin-top: 20px;
+  }
+
+  #logo2{
+      display: none;
+  }
+
+  #img_logo{
+      display: none;
+  }
+
+  .m_vendidos{
+    width: 100%;
+    text-align: center;
+  }
+
+  main{
+    bottom: 200px;
+  }
+
+  .swiper{
+    width: 100%;
+    top: 300px;
+  }
+
+
+
+}
+
+@media screen and (min-width: 560px) and (max-width: 679px){
+
+  header {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      margin-top: 20px;
+  }
+
+  #logo2{
+      display: none;
+  }
+
+  #img_logo{
+      display: none;
+  }
+
+  .btn{
+      width: 580px;
+  }
+
+  .m_vendidos{
+    width: 100%;
+    text-align: center;
+  }
+
+  main{
+    bottom: 200px;
+  }
+
+  .swiper{
+    width: 100%;
+    top: 300px;
+  }
+
+
+}
+
+@media screen and (max-width: 559px){
+
+  header {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      margin-top: 20px;
+  }
+
+  #logo2{
+      display: none;
+  }
+
+  #img_logo{
+      display: none;
+  }
+
+  .btn{
+      width: 350px;
+  }
+
+  .m_vendidos{
+    width: 100%;
+    text-align: center;
+  }
+
+  main{
+    bottom: 200px;
+  }
+
+  .swiper{
+    width: 100%;
+    top: 300px;
+  }
+
+}

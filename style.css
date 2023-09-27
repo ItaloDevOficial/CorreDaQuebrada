@@ -1,0 +1,918 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: fonteg;
+    src: url(fonts/BebasNeue-Regular.otf);
+}
+
+
+@font-face {
+    font-family: emojis2;
+    src: url(fonts/Icons\ 2019.ttf);
+}
+
+@font-face {
+    font-family: FonteM;
+    src: url(fonts/Cream\ Cake.otf);
+}
+
+@font-face {
+    font-family: dancin;
+    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: tangerine;
+    src: url(fonts/Tangerine-Bold.ttf);
+}
+
+body {
+    background-color: #03271b;
+}
+
+header {
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+}
+
+#img_logo {
+    position: relative;
+    width: 100px;
+    margin-left: 100px;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+::before,
+::after {
+    position: absolute;
+    content: "";
+}
+
+.btn-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 10px auto 35px;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: #03271b;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    min-width: 150px;
+}
+
+.btn span {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    left: 0;
+    width: 100%;
+    padding: 15px 10px;
+    transition: 0.3s;
+}
+
+.btn-2::before {
+    background-color: #dba328;
+    transition: 0.3s ease-out;
+}
+
+.btn-2 span {
+    color: #dba328;
+    border: 1px solid #dba328;
+    transition: 0.2s;
+}
+
+.btn-2 span:hover {
+    color: #03271b;
+    transition: 0.2s 0.1s;
+    border: 1px solid #03271b;
+}
+
+.btn.hover-slide-up::before {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0%;
+    width: 100%;
+}
+
+.btn.hover-slide-up:hover::before {
+    height: 100%;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    top: 50px;
+}
+
+#slog{
+    position: relative;
+    width: 40%;
+}
+
+#slogan {
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+    font-family: fonteg;
+    padding: 50px;
+    color: #dba328;
+    text-shadow: 2px 2px #000;
+    letter-spacing: 4px;
+}
+
+.img-container {
+    position: relative;
+    height: 500px;
+    width: 40%;
+    perspective: 500px;
+    transform-style: preserve-3d;
+}
+
+.box {
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    width: 500px;
+    height: 440px;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 1px solid #dba328;
+    position: absolute;
+    top: 50%;
+    transition: 800ms ease-in-out;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+.box:first-of-type {
+    z-index: 5;
+    opacity: 0;
+    left: 15%;
+    transform: translate(-50%, -50%) rotateY(-10deg);
+}
+
+.box:nth-of-type(2) {
+    opacity: 1;
+    left: 20%;
+    transform: translate(-50%, -50%) rotateY(-10deg);
+    z-index: 5;
+
+}
+
+.box:nth-of-type(3) {
+    left: 25%;
+    opacity: 0.75;
+    color: #eee;
+    z-index: 10;
+    transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-50px);
+}
+
+.box:nth-of-type(4) {
+    z-index: 5;
+    opacity: 0.5;
+    left: 30%;
+    transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-100px);
+}
+
+.box:nth-of-type(5) {
+    z-index: 2;
+    opacity: 0.25;
+    left: 35%;
+    transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-150px);
+}
+
+.box:nth-of-type(6) {
+    z-index: 2;
+    opacity: 0.0;
+    left: 40%;
+    transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-200px);
+}
+
+#perfumes_m {
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-radius: 30px;
+    top: 200px;
+    border: 1px solid #dba328;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.712);
+}
+
+.h1-perfume {
+    font-size: 100px;
+    text-align: center;
+    font-family: tangerine;
+    letter-spacing: 3px;
+    padding: 50px;
+    margin-top: 20px;
+    color: #dba328;
+    text-shadow: 2px 2px #000000;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.poster {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.poster::before {
+    content: '';
+    position: absolute;
+    bottom: -45%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: .3s;
+}
+
+.card:hover .poster::before {
+    bottom: 0;
+}
+
+.poster img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+.card:hover .poster img {
+    transform: scale(1.1);
+}
+
+.details {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1.5em 1.5em 2em;
+    background: #03271bb2;
+    backdrop-filter: blur(16px) saturate(120%);
+    transition: .3s;
+    color: #fff;
+    z-index: 2;
+}
+
+.card:hover .details {
+    bottom: 0;
+}
+
+.details h1 {
+    font-weight: 700;
+}
+
+.details h1 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.details .rating {
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+    gap: .25em;
+}
+
+
+.details .rating span {
+    margin-left: 0.25em;
+}
+
+.details .tags {
+    display: flex;
+    gap: .375em;
+    margin-bottom: .875em;
+    font-size: .70em;
+}
+
+.desc {
+    font-size: .85rem;
+}
+
+.details .tags span {
+    padding: .35rem .65rem;
+    color: #fff;
+    border: 1.5px solid #dba328;
+    border-radius: 4px;
+    border-radius: 50px;
+}
+
+.details .desc {
+    color: #fff;
+    opacity: .8;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+#v_mais {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+#perfumes_f {
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-radius: 30px;
+    top: 300px;
+    border: 1px solid #dba328;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.712);
+}
+
+#logo2 {
+    position: absolute;
+    width: 30%;
+    margin-left: 450px;
+    top: -130px;
+}
+
+#Contatos{
+    position: relative;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 400px;
+    flex-wrap: wrap;
+}
+
+#Contato{
+    position: relative;
+    width: 40%;
+    height: auto;
+}
+
+#Contato h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: fonteg;
+    color: #dba328;
+    text-shadow: 2px 2px #000;
+    letter-spacing: 4px;
+}
+
+#imagens{
+    position: relative;
+    width: 40%;
+    height: auto;
+    margin-right: 40px;
+}
+
+#celular{
+    width: 600px;
+}
+
+
+#sobre {
+    position: relative;
+    width: 90%;
+    height: 720px;
+    background-size: cover;
+    border-radius: 30px;
+    border: 1px solid #dba328;
+    margin: auto;
+    top: 250px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.712);
+}
+
+#h1_sobre {
+    font-size: 100px;
+    text-align: center;
+    font-family: tangerine;
+    padding: 50px;
+    color: #dba328;
+    text-shadow: 2px 2px #000000;
+}
+
+#caixa1 {
+    position: relative;
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    bottom: 20px;
+    border-radius: 15px;
+    border: 1px solid #dba328;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.712);
+}
+
+#caixa1:hover {
+    scale: 1.03;
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+    font-family: tangerine;
+    padding: 9px;
+    color: #dba328;
+    text-shadow: 2px 2px #000000;
+}
+
+#p_maior {
+    text-align: center;
+    font-size: 19px;
+    font-family: Verdana;
+    padding: 10px;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 1px 1px #000;
+}
+
+#caixa2 {
+    position: relative;
+    width: 39%;
+    height: 300px;
+    margin: auto;
+    float: left;
+    left: 125px;
+    border-radius: 15px;
+    border: 1px solid #dba328;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.712);
+}
+
+#caixa2:hover {
+    scale: 1.03;
+}
+
+#caixa3 {
+    position: relative;
+    width: 39%;
+    height: 300px;
+    margin: auto;
+    float: left;
+    left: 150px;
+    border-radius: 15px;
+    border: 1px solid #dba328;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.712);
+}
+
+#caixa3:hover {
+    scale: 1.03;
+}
+
+.p_menor {
+    font-size: 16px;
+    text-align: center;
+    font-family: Verdana;
+    color: #fff;
+    padding: 10px;
+    font-weight: 500;
+    text-shadow: 1px 1px #000;
+}
+
+#h1{
+    position: relative;
+    margin: auto;
+    width: 100%;
+
+}
+
+#FeedBacks{
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 300px;
+}
+
+.gallery {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 15rem));
+    grid-template-rows: repeat(auto-fill, 1fr);
+    padding: 2em;
+    gap: 2em;
+    width: clamp(100%, 60em, 90%);
+    border-radius: 1em;
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.1);
+    border: 1px solid #dba328;
+}
+
+.photo {
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 0.5em;
+    height: 27rem;
+    width: 100%;
+    box-shadow: 0.3rem 0.3rem 1rem #0007;
+    transition: transform 0.3s ease-out;
+}
+
+.photo:hover {
+    transform: rotate(4deg);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: filter 0.5s ease-out;
+}
+
+.photo:hover img {
+    filter: grayscale(0);
+}
+
+.photo figcaption {
+    position: absolute;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    font-size: 1.3em;
+    font-family: Inter;
+    font-weight: 600;
+    color: #d9d9d9;
+    text-shadow: 0 0 1em #000;
+    margin: 0.5rem 0.7rem;
+}
+
+
+
+footer {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    background-size: cover;
+    background-color: #02160f;
+    font-size: 20px;
+    top: 100px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.712);
+}
+
+#footer_content {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 2fr);
+    padding: 3rem 3rem;
+}
+
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    gap: 0.75rem;
+    list-style: none;
+    margin-left: 20%;
+
+
+}
+
+.footer_list h3 {
+    color: #dba328;
+    font-family: fonteg;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.footer_list a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.9s all;
+    font-family: fonteg;
+    letter-spacing: 2px;
+
+}
+
+.footer_list a:hover {
+    color: #dba328;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #02160f;
+    font-family: fonteg;
+    color: #dba328;
+}
+
+li{
+    font-family: fonteg;
+    letter-spacing: 2px;
+}
+
+#emoji {
+    font-family: emojis2;
+}
+
+@media screen and (min-width: 868px) and (max-width: 1086px){
+
+    header {
+        width: 100%;
+        height: 150px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #logo2{
+        display: none;
+    }
+
+    #img_logo {
+        position: relative;
+        width: 100px;
+        margin-left: -10px;
+    }
+
+    #slog{
+        width: 100%;
+    }
+
+    #p_maior{
+        font-size: 15px;
+    }
+
+    .p_menor{
+        font-size: 15px;
+    }
+
+    #celular{
+        width: 500px;
+    }
+
+}
+
+@media screen and (min-width: 680px) and (max-width: 867px){
+
+    header {
+        width: 100%;
+        height: 150px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #logo2{
+        display: none;
+    }
+
+    #img_logo{
+        display: none;
+    }
+
+    #slog{
+        width: 100%;
+    }
+
+    #Contato{
+        width: 100%;
+    }
+
+    #imagens{
+        width: 100%;
+    }
+
+    #sobre{
+        margin-top: 250px;
+        height: 820px;
+    }
+
+    #caixa1{
+        width: 90%;
+        height: auto;
+    }
+
+    #caixa2{
+        width: 90%;
+        height: auto;
+        left: 40px;
+    }
+
+    #caixa3{
+        width: 90%;
+        height: auto;
+        left: 40px;
+        top: 20px;
+    }
+
+    #p_maior{
+        font-size: 10px;
+    }
+
+    .p_menor{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (min-width: 560px) and (max-width: 679px){
+
+    header {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #logo2{
+        display: none;
+    }
+
+    #img_logo{
+        display: none;
+    }
+
+    .btn{
+        width: 500px;
+        margin-bottom: 10px;
+    }
+
+    #slog{
+        width: 100%;
+    }
+
+    #Contato{
+        width: 100%;
+    }
+
+    #imagens{
+        width: 100%;
+    }
+
+    #sobre{
+        margin-top: 250px;
+        height: 900px;
+    }
+
+    #caixa1{
+        width: 90%;
+        height: auto;
+    }
+
+    #caixa2{
+        width: 90%;
+        height: auto;
+        left: 20px;
+    }
+
+    #caixa3{
+        width: 90%;
+        height: auto;
+        left: 20px;
+        top: 20px;
+    }
+
+    #p_maior{
+        font-size: 10px;
+    }
+
+    .p_menor{
+        font-size: 10px;
+    }
+
+    #celular{
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 559px){
+
+    header {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #logo2{
+        display: none;
+    }
+
+    #img_logo{
+        display: none;
+    }
+
+    .btn{
+        width: 350px;
+    }
+
+    #slog{
+        width: 100%;
+    }
+
+    #Contato{
+        width: 100%;
+    }
+
+    #imagens{
+        width: 100%;
+    }
+
+    #sobre{
+        margin-top: 450px;
+        height: 990px;
+    }
+
+    #caixa1{
+        width: 90%;
+        height: auto;
+    }
+
+    #caixa2{
+        width: 90%;
+        height: auto;
+        left: 20px;
+    }
+
+    #caixa3{
+        width: 90%;
+        height: auto;
+        left: 20px;
+        top: 20px;
+    }
+
+    #p_maior{
+        font-size: 10px;
+    }
+
+    .p_menor{
+        font-size: 10px;
+    }
+
+}
+
+
