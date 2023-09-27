@@ -320,12 +320,6 @@ p{
   background-image: none;
 }
 
-
-
-
-
-
-
 .img-container {
   position: relative;
   height: 500px;
@@ -716,9 +710,6 @@ li{
   text-align: center;
 }
 
-main{
-  bottom: 200px;
-}
 
 .swiper{
   width: 100%;
@@ -742,6 +733,7 @@ main{
 .desc{
   font-size: 1.5rem;
 }
+
 
 }
 
@@ -771,9 +763,6 @@ main{
   text-align: center;
 }
 
-main{
-  bottom: 200px;
-}
 
 .swiper{
   width: 100%;
@@ -825,9 +814,6 @@ main{
     text-align: center;
   }
 
-  main{
-    bottom: 200px;
-  }
 
   .swiper{
     width: 100%;
@@ -879,9 +865,6 @@ main{
     text-align: center;
   }
 
-  main{
-    bottom: 200px;
-  }
 
   .swiper{
     width: 100%;
