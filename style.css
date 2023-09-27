@@ -912,6 +912,14 @@ li{
     .p_menor{
         font-size: 10px;
     }
+    
+    #celular{
+        width: 400px;
+    }
+
+    .h1-perfume{
+        font-size: 70px;
+    }
 
 }
 
