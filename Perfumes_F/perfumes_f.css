@@ -725,8 +725,10 @@ main{
   top: 300px;
 }
 
-#CarolinaHerrera, #Chanel, #Lancome, #PacoRabanne, #CalvinKlein, #JeanPaulGaultier, #DolceGabanna{
-  width: 50%;
+.card {
+  width: 530px;
+  height: 650px;
+
 }
 
 }
@@ -766,8 +768,9 @@ main{
   top: 300px;
 }
 
-#CarolinaHerrera, #Chanel, #Lancome, #PacoRabanne, #CalvinKlein, #JeanPaulGaultier, #DolceGabanna{
-  width: 50%;
+.card {
+  width: 530px;
+  height: 650px;
 }
 
 }
@@ -844,5 +847,4 @@ main{
     width: 100%;
     top: 300px;
   }
-
 }
