@@ -731,6 +731,18 @@ main{
 
 }
 
+.details h1 {
+  font-size: 3em;
+}
+
+.details .tags {
+  font-size: 1.50em;
+}
+
+.desc{
+  font-size: 1.5rem;
+}
+
 }
 
 @media screen and (min-width: 680px) and (max-width: 867px){
@@ -773,6 +785,18 @@ main{
   height: 650px;
 }
 
+.details h1 {
+  font-size: 3em;
+}
+
+.details .tags {
+  font-size: 1.50em;
+}
+
+.desc{
+  font-size: 1.5rem;
+}
+
 }
 
 @media screen and (min-width: 460px) and (max-width: 679px){
@@ -810,6 +834,22 @@ main{
     top: 300px;
   }
 
+  .card {
+    width: 530px;
+    height: 650px;
+  }
+  
+  .details h1 {
+    font-size: 2em;
+  }
+  
+  .details .tags {
+    font-size: 1.2em;
+  }
+  
+  .desc{
+    font-size: 1.2rem;
+  }
 
 }
 
@@ -846,5 +886,22 @@ main{
   .swiper{
     width: 100%;
     top: 300px;
+  }
+
+  .card {
+    width: 530px;
+    height: 650px;
+  }
+  
+  .details h1 {
+    font-size: 2em;
+  }
+  
+  .details .tags {
+    font-size: 1.2em;
+  }
+  
+  .desc{
+    font-size: 1.2rem;
   }
 }
